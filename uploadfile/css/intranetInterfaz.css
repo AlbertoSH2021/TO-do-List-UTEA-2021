@@ -1,0 +1,44 @@
+/*
+.bx-user-circle{
+    color: rgb(112, 223, 27);
+}
+.bx-user-circle:hover{
+    color: rgb(211, 49, 20);
+    height: 20px;
+    width: 20px;
+    top: 30px;
+    cursor: pointer;
+}
+.navbar-header{ 
+    font-size: 59px;
+    text-align: center;
+    box-shadow: rgb(0, 0, 0,1);
+    background: rgb(139, 240, 81);
+}
+.navbar-brand:hover{
+    color: bisque;
+    font-size: 60px;
+}
+
+.navbar{
+    background-image: linear-gradient(to top, hsla(295, 74%, 6%, 0.959) 0%, rgba(5, 5, 5, 0.986) 100%),url(../img/header.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+ 
+}
+.navbar-form{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group{
+    margin: 20px;
+}
+.btn-success{
+    margin-bottom: auto;
+}*/

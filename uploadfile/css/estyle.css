@@ -1,0 +1,503 @@
+/*body texto*/
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px; 
+}
+main{
+    /*background-image: linear-gradient(135deg, #000000a9 0%, #3d3e3f00 100%);*/
+    margin: 10px;
+}
+/*uso de los ID en el nav*/
+:root{
+    scroll-behavior: smooth;
+}
+/*La parte del header*/
+.contenedor{
+    width: 90%;
+    max-width:  1800px;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px 0; 
+}
+header{
+height: 200vh;
+background-image: linear-gradient(to top, hsla(66, 83%, 9%, 0.582) 0%, rgba(175, 145, 63, 0.596) 100%),url(../img/gift.gif);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+}
+
+.head{
+    
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    color: rgba(255, 255, 255, 0.473);
+    font-size: 4rem;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.head:hover{
+
+    color: rgb(252, 251, 250);
+    font-size: 4.1rem;
+    
+}
+.hamburguesa{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background:rgb(255, 255, 255) ;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,1);
+}
+.hamburguesa:hover{
+
+    background:rgba(252, 249, 249, 0.678) ;
+    height: 45px;
+    width: 45px;
+    box-shadow: 0 0 6px rgba(0,0,0,1);
+}
+.menu-navegation{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 15vw;
+    height: 80%;
+    border-radius: 5%;
+    background-image: linear-gradient(to top, #191d1db0 0%, #636164e0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    z-index: 9;
+}
+.spread{
+    transform: translate(0);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+}
+
+.menu-navegation a{
+    color: rgba(253, 250, 255, 0.808);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    
+}
+.portada{
+    margin-top: -50px;
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: bolder;
+}
+.home_35{
+    margin-top: -140px;
+    color: rgba(29, 8, 77, 0.658);
+    font-size: 100px;
+}
+.mensaje{
+    color: rgb(255, 255, 255);
+}
+
+.bx-home-smile{
+    color: rgb(121, 54, 0);
+}
+.btn-danger{
+    margin-bottom: 0rem;
+    width: 30%;
+    height: 40px;
+   background-color: rgb(146, 34, 34);
+   color: white;
+   font-size: 15px;
+   font-weight: bolder;
+   box-shadow: 0 0 6 rgb(126, 80, 80);
+   border-radius: 10px;
+   
+   text-decoration: none;
+}
+.btn-danger:hover{
+   
+    background-color: rgb(156, 24, 24);
+}
+.gallery{
+    margin-top: -50px;
+}
+
+.copy{
+    margin-top: -15px;
+    font-weight: 300;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    font: weight 900px;;
+} 
+.mapa{
+    box-shadow: 0 0 6px rgba(0,0,0,.5 );
+    border-radius: 3%;
+    
+}
+/*Dentro del main lo primero que trabajaremos sera lo contenido en la etiqueta seccion*/
+/*seccion 1*/
+.subtitulo{
+    
+    text-align: center;
+    font-weight: 900;
+    color: rgba(54, 53, 56, 0.986);
+    margin-bottom: 40px ;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.subtitulo:hover{
+    color: rgb(170, 9, 9);
+  cursor: pointer;
+  font-size: 35px;
+}
+.bxs-phone{
+    color: rgb(40, 214, 24);
+    font-size: 28px;
+}
+.bxs-phone:hover{
+    color: rgb(214, 24, 56);
+    font-size: 32px;
+}
+.n-service:hover{
+    color: rgb(173, 36, 36);
+    font-size: 22px;
+}
+.contenedor-servicio{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicio img{
+    width: 40%;
+}
+.checklist-servicio{
+    width: 45%;
+}
+.service{
+    margin-bottom: 20px;
+}
+.n-service{
+    margin-bottom: 7px;
+    color: rgba(8, 1, 1, 0.658);
+}
+.number{
+    display: inline-block; 
+    background-image: linear-gradient(to top, #1603038e 0%, #101011 100%);/*fondo imagen*/
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 15px;
+}
+.comer{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    color: rgba(78, 12, 0, 0.801);
+    text-align: right;
+    right: 35%;
+}
+.bx-book-heart{
+    width: 30%;
+    font-size: 3vw;
+    color: teal;
+}
+/*seccion 2*/
+.galery{
+    
+background: #9006ec;
+
+}
+.contenedor-galeria{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img-galeria{
+    object-fit: cover;
+    width: 15%;
+    display: block;
+    margin-bottom :20px; 
+    box-shadow: 0 0 6px rgba(0,0,0, 5) ;
+    border: 0.2px solid #030303d5;
+    cursor: pointer;
+}
+.img-galeria:hover{
+
+    font-size: 100%;
+    margin-bottom :40px; 
+    cursor: pointer;
+}
+.imagen-light{
+    position: fixed;
+    background: rgba(0,0,0,.5 );
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+
+}
+.show{
+    transform: translate(0);
+}
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.close{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+/**/
+.video_youtube{
+    margin-bottom :20px; 
+    box-shadow: 0 0 6px rgba(0,0,0, 100) ;
+    border: 2px solid #2c0202d5;
+}
+.video_youtube:hover{
+    margin-bottom :25px; 
+
+}
+.bxl-youtube{
+    margin-left: 46%;
+    font-size: 85px;
+    justify-content: center;
+    border: none;
+    color: rgb(31, 20, 29);
+    
+ 
+}
+
+.bxl-youtube:hover{
+   cursor: pointer;
+    color: rgb(238, 5, 17);  
+}
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.cont-expert img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+    
+}
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+    
+}
+
+
+/*footer*/
+footer{
+    background: rgb(37, 18, 2);
+    padding-bottom: 0.1px;
+}
+.Footer-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.contact-us{
+    width: 40%;
+    color: white;
+}
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+.brand+p{
+    font-weight: 500;
+}
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.social-media-icon:hover{
+    background:rgb(218, 106, 158) ;
+    color: rgb(82, 46, 122); 
+   
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: rgb(248, 246, 246);
+    margin-bottom: 6px;
+}
+/*Adaptar el sitio web a dispositivos Moviles*/
+/*Break Points*/
+/*A los 800 pixeles quiero que sea el punto de quiebre*/
+
+@media screen and (max-width:800px) {
+    .menu-navegation{
+        width: 50vw;
+    }
+    .Titulo{
+        font-size: 40px;
+    }
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-servicio{
+        width: 80%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+    .agregar-imagen{
+        width: 80%;
+    }
+    .img-galeria{
+        width: 45%;
+    }
+    .cont-expert{
+        width: 80%;
+    }
+    .Footer-content{
+        justify-content: center;
+    }
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media-icon{
+        margin-left: 0;
+    }
+    .social-media i{
+        margin-left: 0;
+    }
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .menu-navegation{
+        width: 65vw;
+     
+    }
+    .hamburguesa{
+        top: 20px;
+        right: 20px;
+    }
+    .Titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .agregar-imagen{
+        width: 95%;
+    }
+    .img-galeria{
+        width: 95%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
+}
+/*
+<section class="services contenedor">
+<h2 class="subtitulo">LA VERDADERA HISTORIA DE LA GRAN FIESTA DEL SOL
+</h2> 
+<div class="service">
+    <p>Como en casi todos los pueblos antiguos, el Sol fue motivo de adoración entre los pueblos de los Andes, desde tiempos inmemoriales. El dios inkaico, Inti y su imagen, el Punchao, no fueron sino la postrera adoración helíaca de sucesivas culturas cordilleranas costeñas y selváticas. La imagen era, generalmente, un círculo de oro con la interpretación de sus imaginados rasgos, entre fieros y humanos, según los casos.
+        Del Sol inkaico hubo varias imágenes, como de todos los dioses del mundo. Todas fueron cogidas y fundidas por los conquistadores a partir de 1534. El mestizo mexicano Pedro Gutiérrez de Santa Clara, en su Historia de las Guerras Civiles, dijo que la
+        imagen del Sol hallada en el Cuzco, a mediados del siglo XVI, "era tan grande como una buena rodela y de canto y gordor de un dedo, como ciertos españoles
+        dijeron que lo vieron y tentaron", añadiendo que "estaba todo lleno, sin relieve ninguno" (Libro III,
+        cap. LI).
+        
+        Contamos con otras descripciones posteriores, entre ellas las de Pedro Pizarro, Andrés de Vega y Bernabé Cobo. Todo induce a pensar que hubo dos formas de representarlo: en disco y en ídolo antropomórfico, si leemos con atención determinadas versiones de la etapa inicial de la dominación hispánica.
+        Pero la devoción por el Sol era antiquísima. Atraen por su impresionante belleza el gran medallón de cobre de Pucará, anterior a Tiahuanaco, los soles de esta última cultura y los de Huari, generalmente de rayos como serpientes amarus.
+        Tal vemos al dios Sol incluso en Lima (Supe), también en la ornamentación de los guerreros de Moche y de Recuay y en las diversas representaciones solares costeñas en cerámica y en textiles, cuyos rayos son mazorcas de maíz o frutos diversos de tierra y de mar.
+        El Sol de Paracas, sonriente, no resulta menos sugestivo. Y en las junglas destaca en los testimonios pétreos de la arqueología de Pajatén.
+        Fue en el Imperio de los lnkas donde el Sol alcanzó su mayor adoración: "No había pueblo principal donde no tuviese templo", precisaba Bernabé Cobo.
+        En tiempos posteriores no varió demasiado la imagen representada del Sol, como la del escudo del Cuzco, tal como lo asevera Manuel Chávez Ballón.
+        De cualquier forma, los sacerdotes de aquellos Intis -debió haber varias imágenes-habrían de acabar sucumbiendo heroicamente frente a España, con las armas en las manos, o quemados vivos tras ser cogidos prisioneros, como sucedió con el mismo Vila Oma, Sumo Sacerdote Solar del Cuzco.
+        Esa nobilísima historia se halla aún por escribirse. La resistencia de los sacerdotes del Sol precedió a la de otros sacerdotes de cultos nativos, cuyo correlato fue el tiempo de la "extirpación de idolatrías".
+        En la actualidad no es mucho lo que se conoce sobre los atributos del dios Sol, a pesar de su mención constante. Examinando los varios datos acumulados por algunos autores, creemos que no se debe soslayar lo que dijo el principal cronista del inkario, Pedro de Cieza de León, en 1551 y que confirmó el primer quechuista Diego Gonzáles Holguín, en su 
+        Vocabulario de los finales del siglo XVI, anotando que "el Sol es Ticci Viracocha " (Tercera Parte, cap. 61). Ahora bien, quizá fue su imagen; en todo caso es un tema a debatir.
+        Pero al margen de estas disquisiciones, el Sol vive. Vive en el actual Inti Raymi del Cuzco. Flamea en las banderas de Argentina y de Uruguay, puesto allí en homenaje a los reyes Inkas. Y si no está en la del Perú es porque lo arrebató de aquel emblema nacional el Congreso de 1825, ya que antes ornamentó las cuatro primeras banderas del Perú republicano.
+ El Sol, divinidad universal de la humanidad en lejanos tiempos, vive así en el Perú y en América con más fuerza que en otras partes del mundo. Gracias a los Inkas. Y merced al Cuzco, para el cual cabe siempre un respetuoso homenaje.</p>
+</div>
+</section>*/
