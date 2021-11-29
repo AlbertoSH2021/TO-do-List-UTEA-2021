@@ -7,10 +7,9 @@
 
 .menu {
     position: fixed;
-    right: -200px;
-    width: 260px;
+    
     height: 100%;
-    top: 0;
+   
     z-index: 1;
     text-align: left;
 }
@@ -18,19 +17,12 @@
     right: 0;
     
 }
-.menu-wrap {
-    position: absolute;
-    top: 0;
-    left: 60px;
-    background: #e2dfdff6;
-    width: 200px;
-    height: 100%;
-    }
+
 
 
 .menu a {
     margin-left: 20px;
-    color: rgb(8, 8, 8);
+    color: rgb(170, 147, 147);
     display: block;
     font-size: 12px;
     font-weight: 700;
