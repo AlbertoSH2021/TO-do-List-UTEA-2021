@@ -14,16 +14,15 @@ DROP DATABASE IF EXISTS todolist;
 			('UsuarioPrueba', '1234', 0),
 			('Admin', '1234', 1);
 
-
-CREATE TABLE  listaTareas (
+CREATE TABLE IF NOT EXISTS listaTareas (
   cod_alumno int NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   usuario varchar(50) NOT NULL,
   asunto varchar(300) NOT NULL,
-  estado varchar(30) NOT NULL,
-  descripcion int 
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  estado varchar(30) NOT NULL
+ 
+) ;
 
 
-INSERT INTO  listaTareas (cod_alumno, usuario, asunto,estado,descripcion) VALUES
-(1, 'Alberto Sanchez', 'Programacion Movil','pendiente', 0),
-(2, 'Juancarlos Flores', 'Ingienieria de Software','pendiente' ,0);
+INSERT INTO  listaTareas (cod_alumno, usuario, asunto,estado) VALUES
+(1, 'Alberto Sanchez', 'Programacion Movil','pendiente'),
+(2, 'Juancarlos Flores', 'Ingienieria de Software','pendiente');
