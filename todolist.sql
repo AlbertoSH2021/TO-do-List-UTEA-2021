@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS intranet;
+DROP DATABASE IF EXISTS todolist;
 
-			CREATE DATABASE intranet;
-			USE intranet;
+			CREATE DATABASE todolist;
+			USE todolist;
 
 			CREATE TABLE usuarios(
 				usuario varchar(45) PRIMARY KEY,
@@ -15,17 +15,15 @@ DROP DATABASE IF EXISTS intranet;
 			('Admin', '1234', 1);
 
 
-CREATE TABLE IF NOT EXISTS listaTareas (
-  cod_alumno int NOT NULL,
+CREATE TABLE  listaTareas (
+  cod_alumno int NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   usuario varchar(50) NOT NULL,
-  asunto varchar(30) NOT NULL,
-  descripcion varchar(500) NOT NULL
+  asunto varchar(300) NOT NULL,
+  estado varchar(30) NOT NULL,
+  descripcion int 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-ALTER TABLE listaTareas ADD PRIMARY KEY (cod_alumno);
 
-ALTER TABLE listaTareas MODIFY cod_alumno int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100001;
-  
-INSERT INTO listaTareas (cod_alumno, usuario, asunto,descripcion) VALUES
-(100001, 'Alberto Sanchez', 'Programacion Movil', 'primer examne parcial el miercoles 01 diciembre '),
-(100002, 'Juancarlos Flores', 'Ingienieria de Software', 'Proyecto to do list en php');
+INSERT INTO  listaTareas (cod_alumno, usuario, asunto,estado,descripcion) VALUES
+(1, 'Alberto Sanchez', 'Programacion Movil','pendiente', 0),
+(2, 'Juancarlos Flores', 'Ingienieria de Software','pendiente' ,0);
