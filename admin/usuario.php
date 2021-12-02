@@ -395,6 +395,20 @@
 <p class="parrafo" id="title-1"><em><span></span><strong class="usuario" ><img src="../admin/images/usuario.png"  width="120px" > <?= $_SESSION['usuario'] ?></strong></em><em><span></span></em></div></h1></p>
 
 
+
+
+
+
+<br>
+
+<!--seccion todolist  -->
+<div style="background-color: khaki;" align="center" width="100vw" height='100vh'>  
+         
+         <iframe src="todolist.php" frameborder="0" width="100%" height="1000px"></iframe>      
+     </div>
+<!--  fin-->
+
+
  	
 <style>
 				
