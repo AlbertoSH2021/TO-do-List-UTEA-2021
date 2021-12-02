@@ -6,8 +6,8 @@
 	if( validarLogin($usuario, $clave) ) {
 	// Accedemos al sistema
 		if( esAdmin() )
-			header('Location: ../admin/index.php');
-		else header('Location: ../panelUsuario.php');
+			header('Location: ../admin/admin.php');
+		else header('Location: ../admin/usuario.php'); //ingreso de administrador o visitante// header('Location: ../panelUsuario.php');
 	} else {
 	// Sino volvemos al formulario inicial
 ?>

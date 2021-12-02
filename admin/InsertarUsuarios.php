@@ -24,7 +24,7 @@
 						  <span><input type="text"  placeholder="Usuario"  name="txtUsuario"  
 							 onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME';}"
 							><label><img src="images/con1.png" alt="" /></label></span>									    
-						  <span class="left" ><input type="text"   placeholder="Contraseña"  name="txtClave" 
+						  <span class="left" ><input type="password"   placeholder="Contraseña"  name="txtClave" 
 						 onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL';}"
 							><label><img src="images/con2.png" alt="" /></label></span>
 						  <div class="clear"></div>
@@ -243,7 +243,7 @@
                     }
                     body{
                                     
-                                    background-image: linear-gradient(to top, hsla(0, 71%, 12%, 0.582) 0%, rgba(68, 17, 64, 0.185) 100%),url(gift.gif);
+                                    background-image: linear-gradient(to top, hsla(323, 82%, 15%, 0.603) 0%, rgba(19, 7, 73, 0.486) 100%),url(images/gift.gif);
                                     background-repeat: no-repeat;
                                     background-size: cover;
                                     background-attachment: fixed;
