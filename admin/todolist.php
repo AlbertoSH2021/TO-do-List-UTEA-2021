@@ -58,9 +58,9 @@ include_once("conexion.php");
 		font-family: sans-serif;
 		margin:0;
 		padding:0;
-		height: 100%;
+		/*height: 100%;*/
    		 width: 90%;						
-		background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.933) 0%, rgba(24, 3, 2, 0.664) 100%),url(images/universo.gif);
+		background-image: linear-gradient(to top, hsla(46, 100%, 91%, 0.933) 0%, rgba(250, 230, 230, 0.912) 100%),url(images/universo.gif);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
@@ -75,9 +75,8 @@ include_once("conexion.php");
 			text-align:center;
 			width: 100%;
 			border-collapse: collapse;
-			border: 1px solid rgba(211, 183, 22, 0.596);
 			
-			background: rgba(255, 255, 255, 0.39);
+			background: rgb(255, 254, 254);
 		}
 		th 
 		{
@@ -96,7 +95,7 @@ include_once("conexion.php");
 		}
 		tr 
 		{
-			border-bottom: 1px solid #cccccc00;
+		
 			width:100%;
 		}
 		td 
@@ -148,35 +147,28 @@ include_once("conexion.php");
 			display: none;
 			position: absolute;
 			padding:0;
-			background-color:rgba(0, 0, 0, 0.5);
+			background-color:rgba(255, 255, 255, 0.5);
 			width:100%;
 			height:100%;
 		}
 		.contenedor_popup 
 		{
 			border-radius: 5px;
-			top: 50%;
-			left: 50%;
+			top:-50%;
+			left: 70%;
 			position: absolute;
 			transform: translate(-50%,-50%);
 			width:400px;
 			border-radius: 5px;
 			transition: all 0.2s;
 		}
-		img
-		{
-			width:100px;
-			height:100px;
-			float:left;
-			position:absolute;
-			margin-left:2%;
-		}
+	
 		.caja_popup2 
 		{
 			display: block;
 			position: absolute;
 			padding:0;
-			background-color:rgba(0, 0, 0, 0.5);
+			background-color:rgba(102, 101, 101, 0.5);
 			width:100%;
 			height:100%;
 		}
